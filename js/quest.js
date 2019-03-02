@@ -253,7 +253,7 @@ function game(_works) {
         if (answer == -1 || _works[round].answer.length == 0) {
             break;
         }
-        if (isNaN(answer) || answer < 0 || answer > _works[round].answer.length) {
+        if (isNaN(answer) || answer <= 0 || answer > _works[round].answer.length) {
             alert('Некорректно введен ответ. Попробуйте ещё раз.');
             continue;
         }
