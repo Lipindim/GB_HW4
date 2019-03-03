@@ -31,7 +31,7 @@ var questions = [
     },
 ];
 
-function game(ques) {
+function gameQuest(ques) {
     let play = true;
     let round = 0;
     let countRightAnswer = 0;
@@ -62,5 +62,5 @@ function check(userAnswer, rightAnswer) {
 }
 
 function startGame() {
-    game(questions);
+    gameQuest(questions);
 }
