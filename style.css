@@ -200,4 +200,18 @@ input[type="text"]:first-letter
     padding-top: 11px;
     padding-bottom: 9px;
 }
+label{
+    display: block;
+}
+input{
+    display: inline-block;
+}
+.error-message{
+    color: red;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    display: inline-block;
+}
 

@@ -2,26 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <script type="text/javascript" src="js/script.js"> </script>
-    <script type="text/javascript" src="js/game.js"> </script>
-    <script type="text/javascript" src="js/quest.js"> </script>
     <link rel="stylesheet" href="style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <title>Task 4</title>
 </head>
 <body>
 <div class="container">
-        <div class="header">
-            <ul class="menu">
-                <li><a href="#" onclick="getDigitalObject()">Задание 1</a></li>
-                <li><a href="#" onclick="startGame()">Задание 2</a></li>
-                <li><a href="#" onclick="startQuest()">Задание 3</a></li>
-            </ul>
-        </div>
-
-        <div class="content">
-        <h1>Вывод в консоль</h1>
-        </div>
-        <div class="footer">&copy;Все права защищены</div>
+    <div class="header">
     </div>
+    <div class="content">
+        <form>
+            <div>
+            <label>Имя</label>
+            <input name="name" type="text">
+            </div>
+            <div>
+            <label>Телефон</label>
+            <input name="phone" type="text">
+            </div>
+            <div>
+            <label>Email</label>
+            <input name="email" type="text">
+            </div>
+            <div>
+            <label>Текст</label>
+            <input name="text" type="text">
+            </div>
+            <input type="button" onclick="validate(this.form)" value="Отправить">
+        </form>
+    </div>
+    <div class="footer">&copy;Все права защищены</div>
+</div>
 </body>
 </html>
